@@ -8,7 +8,7 @@ class ColorField extends TextField {
 		parent::__construct($name, $title, $value, 6, $form);
 	}
 	
-	function Field() {
+	function Field($properties = array()) {
 		$this->addExtraClass('ColorPickerInput');
 		Requirements::javascript("colorpicker/javascript/colorpicker.js");
 		Requirements::javascript("colorpicker/javascript/colorfield.js");
