@@ -87,26 +87,22 @@ class ColorField_Disabled extends ColorField
 				<input type=\"hidden\" value=\"{$this->value}\" name=\"$this->name\" />";
     }
 
-    public
-    function Type()
+    public function Type()
     {
         return "date_disabled readonly";
     }
 
-    public
-    function jsValidation()
+    public function jsValidation()
     {
         return null;
     }
 
-    public
-    function php()
+    public function php()
     {
         return true;
     }
 
-    public
-    function validate($validator)
+    public function validate($validator)
     {
         return true;
     }
