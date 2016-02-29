@@ -12,12 +12,12 @@ class ColorField extends TextField
 
     public function Field($properties = array())
     {
-        $base = str_replace(BASE_PATH . '/', '', __DIR__);
+        $base = str_replace(BASE_PATH . '/', '', dirname(dirname(__DIR__)));
 
-        Requirements::javascript($base . '/javascript/colorpicker.js');
-        Requirements::javascript($base . '/javascript/colorfield.js');
+        Requirements::javascript($base . '/javascript/colorpicker.min.js');
+        Requirements::javascript($base . '/javascript/colorfield.min.js');
 
-        Requirements::css($base . '/css/colorpicker.css');
+        Requirements::css($base . '/css/colorpicker.min.css');
 
         return $this->createTag('input', array_merge(
                 $this->getAttributes(),
