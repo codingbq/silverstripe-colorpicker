@@ -108,5 +108,3 @@ class ColorField_Disabled extends ColorField
         return true;
     }
 }
-
-?>
